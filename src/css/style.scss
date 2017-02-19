@@ -267,7 +267,7 @@ a {
             width: 25%;
             @media screen and (max-width: 720px) {
                 width: 100%;
-                margin-bottom: 5px;
+                margin-bottom: 2px;
             }
         }
         .item-more {
@@ -284,6 +284,9 @@ a {
             display: inline-block;
             float: left;
         }
+    }
+    .personal .item-hd{
+        padding: 0 0 5px;
     }
     .item-bd {
         margin-bottom: 5px;
@@ -449,6 +452,9 @@ footer {
 
 // 打印样式
 @media print {
+    body{
+        padding:0;
+    }
     .content {
         width: 970px;
         height: 1372px;
@@ -464,7 +470,7 @@ footer {
         width: 48%;
     }
     .content .content-hd {
-        padding: 60px 50px 40px;
+        //padding: 0 20px 14px;
     }
     .content .content-hd .title {
         font-size: 56px;
@@ -510,16 +516,19 @@ footer {
         margin-bottom: 0;
     }
     .content .content-bd .prize .item-hd {
-        padding: 11px 0 5px;
+        padding: 8px 0 5px;
+    }
+    .content .content-bd .personal .item-hd{
+        padding: 0 0 5px;
     }
     .content .content-bd .practice .item-time {
         width: 31%;
     }
     .content .content-bd .section-hd {
-        margin: 10px auto 8px;
+        margin: 0 auto 8px;
     }
     .content .content-bd section {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
     .content .section-content {
         line-height: 1.75 !important;
